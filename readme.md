@@ -1,6 +1,4 @@
-# Recriando o conteúdo do README.md conforme estruturado anteriormente para exportação direta.
-
-readme_content = """# Volt ⚡
+# Volt ⚡
 
 O **Volt** é um sistema de gerenciamento de inventário (CRUD) focado em materiais de instalações elétricas prediais. O objetivo do projeto é permitir o controle simplificado de estoque, lidando com diferentes tipos de materiais como condutores, disjuntores e conduítes em uma interface unificada.
 
@@ -21,16 +19,4 @@ Este projeto utiliza uma stack moderna e robusta:
 
 ## 🗄️ Estrutura do Banco de Dados
 
-O projeto utiliza uma tabela única polimórfica para simplificar o CRUD, mantendo a flexibilidade para diferentes componentes:
-
-```sql
-CREATE TABLE materiais (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    descricao TEXT,
-    quantidade_estoque INT DEFAULT 0,
-    cor VARCHAR(20),
-    unidade_medida VARCHAR(20) NOT NULL,
-    especificacao_tecnica VARCHAR(100) NOT NULL,
-    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+O projeto utiliza uma tabela única polimórfica para simplificar o CRUD, mantendo a flexibilidade para diferentes componentes.
