@@ -12,4 +12,4 @@ CREATE TABLE IF NOT EXISTS materiais(
     unidade_medida VARCHAR(20) NOT NULL, -- Ex: 'Rolo 100m', 'Pacote 20m', 'Unidade'
     especificacao_tecnica VARCHAR(100) NOT NULL, -- EX: '20A', '1.5 mm²', '3/4'
     data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)
+);
