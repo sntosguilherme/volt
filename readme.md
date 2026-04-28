@@ -15,7 +15,6 @@ Este projeto utiliza uma stack moderna e robusta:
 - **Cadastro de Materiais:** Registro de itens com especificações técnicas (amperagem, bitola, diâmetro).
 - **Controle de Estoque:** Gerenciamento de quantidades baseado em unidades de medida específicas (Rolo 100m, Pacote 20m, Unidade).
 - **Diferenciação por Cores:** Campo específico para identificação de condutores (fios/cabos).
-- **Listagem em Tempo Real:** Visualização de todos os itens cadastrados com data de registro.
 
 ## 🗄️ Estrutura do Banco de Dados
 
