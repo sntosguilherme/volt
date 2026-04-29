@@ -1,6 +1,7 @@
 from ninja import Schema
 from pydantic import Field
 from typing import Optional
+from datetime import datetime
 
 class MaterialIn(Schema):
     nome: str
@@ -18,4 +19,4 @@ class MaterialOut(Schema):
     cor: Optional[str]
     unidade_medida: str
     especificacao_tecnica: str
-    data_cadastro: str 
+    data_cadastro: datetime 

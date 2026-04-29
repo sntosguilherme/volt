@@ -3,7 +3,7 @@ from django.db import models
 class Material(models.Model):
     id = models.AutoField(primary_key=True)
     
-    nome = models.CharField(max_length=100)
+    nome = models.CharField(max_length=100, unique=True))
     descricao = models.TextField(blank=True, null=True)
     
     quantidade_estoque = models.IntegerField(default=0)
