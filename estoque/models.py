@@ -21,7 +21,7 @@ class Material(models.Model):
                 name='unique_material_item'
             ),
             models.CheckConstraint(
-                check=models.Q(quantidade_estoque__gte=0), 
+                condition=models.Q(quantidade_estoque__gte=0), 
                 name='quantidade_nao_negativa'
             )
         ]
