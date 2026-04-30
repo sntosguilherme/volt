@@ -1,21 +1,32 @@
-# Volt ⚡
+# Volt - Sistema de Gerenciamento de Materiais Elétricos
 
-O **Volt** é um sistema de gerenciamento de inventário (CRUD) focado em materiais de instalações elétricas prediais. O objetivo do projeto é permitir o controle simplificado de estoque, lidando com diferentes tipos de materiais como condutores, disjuntores e conduítes em uma interface unificada.
+Volt é um CRUD para gerenciamento de estoque de materiais para instalações elétricas prediais desenvolvido com Django Ninja. O projeto utiliza restrições de integridade diretamente no banco de dados e validação de schemas com Pydantic para garantir a consistência dos materiais cadastrados.
 
-## 🚀 Tecnologias
+## Tecnologias Utilizadas
 
-Este projeto utiliza uma stack moderna e robusta:
+* **Frontend:** [TypeScript](https://www.typescriptlang.org/)
+* **Backend:** Python 3.12+
+* **API Framework:** [Django Ninja](https://django-ninja.rest-framework.com/) (FastAPI-style para Django)
+* **Banco de Dados:** [SQLite](https://sqlite.org/) 
 
-- **Frontend:** [TypeScript](https://www.typescriptlang.org/)
-- **Backend:** [Python](https://www.python.org/) com [Django Ninja](https://django-ninja.rest-api.cn/) (Fast, Type-safe API)
-- **Banco de Dados:** [MySQL](https://www.mysql.com/)
+## Arquitetura e Integridade de Dados
 
-## 📋 Funcionalidades
+O backend implementa travas automáticas para evitar erros comuns de inventário:
 
-- **Cadastro de Materiais:** Registro de itens com especificações técnicas (amperagem, bitola, diâmetro).
-- **Controle de Estoque:** Gerenciamento de quantidades baseado em unidades de medida específicas (Rolo 100m, Pacote 20m, Unidade).
-- **Diferenciação por Cores:** Campo específico para identificação de condutores (fios/cabos).
+* **Sem Duplicatas**: O banco não aceita dois materiais com a mesma combinação de Nome, Marca, Cor e Unidade.
 
-## 🗄️ Estrutura do Banco de Dados
+* **Estoque Positivo**: O sistema bloqueia qualquer tentativa de inserir ou atualizar quantidades para valores negativos.
 
-O projeto utiliza uma tabela única polimórfica para simplificar o CRUD, mantendo a flexibilidade para diferentes componentes.
+Validação de Tipos: Uso de Schemas para garantir que os dados recebidos via API estejam no formato correto antes de chegarem ao banco.
+
+## Pré-requisitos
+
+* Python 3.12 ou superior
+* Git
+
+## Instalação e Configuração
+
+em breve
+
+---
+Desenvolvido por **João Guilherme Silva Santos** ⚡
