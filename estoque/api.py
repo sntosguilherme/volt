@@ -6,13 +6,13 @@ from typing import List
 api = NinjaAPI()
 
 #criar(create)
-@api.post("/materiais", response={201: MaterialOut})
+@api.post("/materiais/", response={201: MaterialOut})
 def criar_material(request, data: MaterialIn):
     material = Material.objects.create(**data.dict())
     return 201, material
 
 #ler(read)
-@api.get("/materiais", response=List[MaterialOut])
+@api.get("/materiais/", response=List[MaterialOut])
 def listar_materiais(request):
     return Material.objects.all()
 
