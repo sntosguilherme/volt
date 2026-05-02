@@ -8,6 +8,7 @@
     <div id="app">
         <h1>Controle de Estoque Volt</h1>
         
+        <!--Espaço para cadastro de novos elementos: (Post-Create)-->
         <section id="cadastro-material">
             <h2>Cadastrar novo material</h2>
             <form id="form-material">
@@ -25,16 +26,17 @@
                 <input type="number" id="quantidade" placeholder="Quantidade" required>
                 <input type="text" id="unidade" placeholder="Unidade (Ex: Rolo 10m, un)" required>
                 </div>
-                <button type="submit">Cadastrar no Estoque</button>
+                <button type="submit" id="btn-salvar">Cadastrar no Estoque</button>
+                <button type="button" onclick="window.cancelarEdicao()" id="btn-cancelar" style="margin-left: 10px;">Cancelar</button>
             </form>
         </section>
 
-        <hr>
-        
+        <hr> <!--LISTAGEM DE MATERIAIS-->>
+
         <section id="estoque">
             <h2>Materiais em Estoque</h2>
             <ul id="lista-materiais">
-                <!-- O TypeScript vai injetar os itens aqui -->
+            <!--Os materiais cadastrados serão listados aqui-->
             </ul>
         </section>
 
