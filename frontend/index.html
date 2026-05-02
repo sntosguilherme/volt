@@ -26,11 +26,12 @@
                 <input type="number" id="quantidade" placeholder="Quantidade" required>
                 <input type="text" id="unidade" placeholder="Unidade (Ex: Rolo 10m, un)" required>
                 </div>
-                <button type="submit">Cadastrar no Estoque</button>
+                <button type="submit" id="btn-salvar">Cadastrar no Estoque</button>
+                <button type="button" onclick="window.cancelarEdicao()" id="btn-cancelar" style="margin-left: 10px;">Cancelar</button>
             </form>
         </section>
 
-        <hr>
+        <hr> <!--LISTAGEM DE MATERIAIS-->>
 
         <section id="estoque">
             <h2>Materiais em Estoque</h2>
