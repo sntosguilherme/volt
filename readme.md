@@ -58,10 +58,11 @@ Instale as dependências Python:
 ```bash
 pip install -r requirements.txt
 ```
-Configure as variáveis de ambiente. Crie um arquivo `.venv` na raiz do projeto:
-
+Configure as variáveis de ambiente. Crie um arquivo `.venv` na raiz do projeto.
 ```
-
+python -m venv venv
+.\venv\Scripts\activate
+```
 Aplique as migrações e inicialize o banco de dados:
 
 ```bash
