@@ -117,8 +117,9 @@ const renderizarTela = async () => {
   listaElemento.innerHTML = materiais.map(m => `
     <li style="margin-bottom: 10px; list-style: none; border-bottom: 1px solid #eee; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
       <div>
-      <strong>${m.nome}</strong> - ${m.quantidade_estoque} ${m.unidade_medida} <br>
+      <strong>${m.nome}</strong> <br>
       <small>Marca: ${m.marca || 'N/A'} | Cor: ${m.cor || 'N/A'} | Spec: ${m.especificacao_tecnica || 'N/A'}</small>
+      <small><br>Quantidade: ${m.quantidade_estoque}</small>
       </div>
       
       <div>

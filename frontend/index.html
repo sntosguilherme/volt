@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Volt - Estoque</title>
 </head>
 <body>
     <div id="app">
-        <h1>Controle de Estoque Volt</h1>
+        <header class="top-banner">
+        <h1>VOLT⚡</h1>
+        </header>
         
         <!--Espaço para cadastro de novos elementos: (Post-Create)-->
         <section id="cadastro-material">
-            <h2>Cadastrar novo material</h2>
             <form id="form-material">
+                <h2>Cadastrar novo material</h2>
                 <div class="input-group">
                 <input type="text" id="nome" placeholder="Nome do Material" required>
                 <input type="text" id="marca" placeholder="Marca">
@@ -27,11 +30,10 @@
                 <input type="text" id="unidade" placeholder="Unidade (Ex: Rolo 10m, un)" required>
                 </div>
                 <button type="submit" id="btn-salvar">Cadastrar no Estoque</button>
-                <button type="button" onclick="window.cancelarEdicao()" id="btn-cancelar" style="margin-left: 10px;">Cancelar</button>
+                <button type="button" onclick="window.cancelarEdicao()" id="btn-cancelar">Cancelar</button>
             </form>
         </section>
 
-        <hr> <!--LISTAGEM DE MATERIAIS-->>
 
         <section id="estoque">
             <h2>Materiais em Estoque</h2>
